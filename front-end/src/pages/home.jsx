@@ -1,7 +1,7 @@
 import  'react'
 import Main from '../components/main'
 
-const home = () => {
+const Home = () => {
   return (
     <div>
       <Main />
@@ -10,4 +10,4 @@ const home = () => {
   )
 }
 
-export default home
+export default ome
