@@ -1,5 +1,5 @@
 import'react'
-import Main from '../components/main'
+import Main from '../components/main.jsx'
 
 const ArtistsTEMP = () => {
   return (

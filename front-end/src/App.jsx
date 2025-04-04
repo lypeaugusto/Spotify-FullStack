@@ -7,6 +7,7 @@ import Artist from './pages/ArtistTEMP.jsx';
 import Songs from './pages/SongsTEMP.jsx';
 import Song from './pages/SongTEMP.jsx';
 
+
 const App = () => {
   return (
     <BrowserRouter>
