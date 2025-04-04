@@ -1,10 +1,10 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay, faCirclePause, faBackwardStep, faForwardStep } from '@fortawesome/free-solid-svg-icons';
 import { useParams, useNavigate } from 'react-router-dom';
 import { songsArray } from '../assets/database/songs';
 
-const Player = ({ }) => {
+const Player = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const audioRef = useRef(null);

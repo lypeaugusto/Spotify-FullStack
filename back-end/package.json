@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node ./api/server.js",
+    "build": "echo \"Nenhum processo de build necessário para o back-end\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,7 +13,10 @@
   "type": "module",
   "description": "",
   "dependencies": {
+    "aula1": "file:..",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongodb": "^6.15.0",
+    "path": "^0.12.7"
   }
 }

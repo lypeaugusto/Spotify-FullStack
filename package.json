@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "mongodb": "^6.15.0"
-  }
+  },
+  "name": "aula1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm start --prefix back-end",
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lypeaugusto/Spotify-FullStack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lypeaugusto/Spotify-FullStack/issues"
+  },
+  "homepage": "https://github.com/lypeaugusto/Spotify-FullStack#readme",
+  "description": ""
 }
