@@ -1,11 +1,11 @@
-import 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './components/Header.jsx';
 import Home from './pages/Home.jsx';
-import Artists from './pages/Artists';
-import Artist from './pages/Artist';
-import Songs from './pages/Songs';
-import Song from './pages/Song';
+import Artists from './pages/Artists.jsx';
+import Artist from './pages/Artist.jsx';
+import Songs from './pages/Songs.jsx';
+import Song from './pages/Song.jsx';
 
 const App = () => {
   return (
