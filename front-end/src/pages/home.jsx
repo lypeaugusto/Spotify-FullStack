@@ -1,13 +1,11 @@
-import  'react'
-import Main from '../components/main'
+import 'react';
 
 const Home = () => {
   return (
     <div>
-      <Main />
-      
+      <h1>Bem-vindo ao Spotify Clone</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
