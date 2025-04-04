@@ -1,10 +1,10 @@
 import'react'
 import Main from '../components/main'
 
-const artists = () => {
+const ArtistsTEMP = () => {
   return (
     <Main type="artists"/>
   )
 }
 
-export default artists
+export default ArtistsTEMP;
