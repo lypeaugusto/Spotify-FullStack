@@ -10,4 +10,4 @@ const Home = () => {
   )
 }
 
-export default ome
+export default Home
