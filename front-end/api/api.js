@@ -1,9 +1,8 @@
 import axios from 'axios';
-import dotenv/config
+// Remove dotenv import as it's not needed in the browser
+// Use a hardcoded NODE_ENV or pass it during the build process
 
-
-
-const {NODE_ENV} = process.env.NODE_ENV ;
+const NODE_ENV = process.env.NODE_ENV || 'development';
 const URL = NODE_ENV === 'development'  ? 'http://localhost:3000/api': '/api';
 ;
 
