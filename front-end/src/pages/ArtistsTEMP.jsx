@@ -1,10 +1,10 @@
-import'react'
-import Main from '../components/main.jsx'
+import 'react';
+import Main from '../components/Main.jsx';
 
 const ArtistsTEMP = () => {
   return (
-    <Main type="artists"/>
-  )
-}
+    <Main type="artists" />
+  );
+};
 
 export default ArtistsTEMP;

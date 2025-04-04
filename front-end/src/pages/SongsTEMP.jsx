@@ -1,5 +1,5 @@
 import 'react'
-import Main from '../components/main.jsx' 
+import Main from '../components/Main.jsx' 
 
 const songs = () => {
   return (
