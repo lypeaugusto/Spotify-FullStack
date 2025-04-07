@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Songitem from './Songitem';
 
-const SongList = ({ songsArray }) => {
+const Songlist = ({ songsArray }) => {
   const [items, setItems] = useState(5);
 
   const handleSeeMore = () => {
@@ -20,8 +20,8 @@ const SongList = ({ songsArray }) => {
           </p>
         )}
       </div>
-    </div>
+    </div>  
   );
 };
 
-export default SongList;
+export default Songlist;
