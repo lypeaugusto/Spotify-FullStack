@@ -2,7 +2,7 @@ import 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-solid-svg-icons';
 import { Link, useParams } from 'react-router-dom';
-import Songlist from '../components/songlist';
+import SongList from '../components/SongList';
 import { artistArray } from '../assets/database/artists';
 import { songsArray } from '../assets/database/songs';
 
@@ -31,7 +31,7 @@ const Artist = () => {
 
       <div className="artist__body">
         <h2>Populares</h2>
-        <Songlist songsArray={artistSongs} />
+        <SongList songsArray={artistSongs} />
       </div>
 
       <Link to={`/song/${artistSongs[randomIdFromArtist]?._id}`} className='single-item__play'>
