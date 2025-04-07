@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Songitem from './Songitem';
 
-const Songlist = ({ songsArray }) => {
+const SongList = ({ songsArray }) => {
   const [items, setItems] = useState(5);
 
   const handleSeeMore = () => {
@@ -24,4 +24,4 @@ const Songlist = ({ songsArray }) => {
   );
 };
 
-export default Songlist;
+export default SongList;
