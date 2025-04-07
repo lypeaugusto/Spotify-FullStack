@@ -1,8 +1,6 @@
-import 'dotenv/config'
 import axios from 'axios';
 
-
-const NODE_ENV = 'development'; 
+const NODE_ENV = 'development'; // Replace with 'production' for production builds
 const URL = NODE_ENV === 'development' 
   ? 'https://spotify-fullstack-gdhj.onrender.com/api' 
   : 'https://spotify-fullstack-gdhj.onrender.com/api'; // Replace with your production URL

@@ -5,12 +5,10 @@
   "name": "aula1",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "@types/node": "^22.14.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end",
-    "start": "npm start --prefix back-end"
+    "start": "npm start --prefix back-end",
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
   },
   "repository": {
     "type": "git",
