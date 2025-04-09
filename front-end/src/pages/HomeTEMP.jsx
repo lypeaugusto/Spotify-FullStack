@@ -1,6 +1,6 @@
-import React from 'react'
+import 'react';
 
-const Home = () => {
+const HomeTEMP = () => {
   return (
     <div>
       <h1>Bem-vindo ao Spotify Clone</h1>
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeTEMP;
