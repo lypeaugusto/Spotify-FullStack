@@ -3,7 +3,7 @@ import 'react';
 const HomeTEMP = () => {
   return (
     <div>
-      <h1>Bem-vindo ao Spotify Clone</h1>
+      <App/>
     </div>
   );
 };
