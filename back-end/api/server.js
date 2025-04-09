@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.get('/api', (request, response) => {
   response.json({
-    message: 'Bem-vindo à API do Spotify Clone! aqui estão os endpoints disponíveis:',
+    message: 'Bem-vindo à API do Spotify Clone!',
     endpoints: {
       songs: '/api/songs',
       artists: '/api/artists',
@@ -45,10 +45,10 @@ app.get('/api/artists', async (request, response) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, 'C:/estudos/spotify react/aula1/front-end/dist')));
+app.use(express.static(path.join(__dirname, '../front-end/dist/')));
 
 app.get('*', async (request, response) => {
-  const indexPath = path.join(__dirname, 'C:/estudos/spotify react/aula1/front-end/dist/index.html');
+  const indexPath = path.join(__dirname, '../front-end/dist/index.html');
   if (fs.existsSync(indexPath)) {
     response.sendFile(indexPath);
   } else {
