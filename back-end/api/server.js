@@ -45,10 +45,10 @@ app.get('/api/artists', async (request, response) => {
   }
 });
 
-app.use(express.static(path.join(__dirname, '../../front-end/dist')));
+app.use(express.static(path.join(__dirname, '../../front-end/public'))); // Alterado de 'dist' para 'public'
 
 app.get('*', async (request, response) => {
-  const indexPath = path.join(__dirname, '../front-end/dist/index.html');
+  const indexPath = path.join(__dirname, '../../front-end/public/index.html'); // Alterado de 'dist' para 'public'
   if (fs.existsSync(indexPath)) {
     response.sendFile(indexPath);
   } else {
