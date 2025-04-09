@@ -1,11 +1,11 @@
-import 'react';
+import React from 'react'
 
-const HomeTEMP = () => {
+const Home = () => {
   return (
     <div>
-      <App/>
+      <h1>Bem-vindo ao Spotify Clone</h1>
     </div>
   );
 };
 
-export default HomeTEMP;
+export default Home;

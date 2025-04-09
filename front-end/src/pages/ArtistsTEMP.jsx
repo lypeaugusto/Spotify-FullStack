@@ -1,10 +1,10 @@
 import 'react';
 import Main from '../components/Main.jsx';
 
-const ArtistsTEMP = () => {
+const Artists = () => {
   return (
     <Main type="artists" />
   );
 };
 
-export default ArtistsTEMP;
+export default Artists;
