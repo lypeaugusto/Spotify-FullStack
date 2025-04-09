@@ -1,10 +1,9 @@
 import React from 'react'
+import App from '../components/App'; // Adjust the path as needed
 
 const Home = () => {
   return (
-    <div>
-      <h1>Bem-vindo ao Spotify Clone</h1>
-    </div>
+    <App />
   );
 };
 
