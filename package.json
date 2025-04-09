@@ -1,11 +1,11 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
     "mongodb": "^6.15.0"
   },
   "name": "aula1",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "npm start --prefix back-end",
     "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
