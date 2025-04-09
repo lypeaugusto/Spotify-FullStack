@@ -47,8 +47,8 @@ app.get('/api/artists', async (request, response) => {
 
 app.use(express.static(path.join(__dirname, '../../front-end/dist')));
 
-app.get('*', (request, response) => {
-  const indexPath = path.join(__dirname, '../../front-end/dist/index.html'); // Corrigido o caminho
+app.get('*', async (request, response) => {
+  const indexPath = path.join(__dirname, '../front-end/dist/index.html');
   if (fs.existsSync(indexPath)) {
     response.sendFile(indexPath);
   } else {
