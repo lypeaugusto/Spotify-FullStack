@@ -6,13 +6,14 @@ import Artists from './pages/ArtistsTEMP.jsx';
 import Artist from './pages/ArtistTEMP.jsx';
 import Songs from './pages/SongsTEMP.jsx';
 import Song from './pages/SongTEMP.jsx';
+import Main from './components/Main.jsx';
 
 const App = () => {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Main />} />
         <Route path="/artists" element={<Artists />} />
         <Route path="/artist/:id" element={<Artist />} />
         <Route path="/songs" element={<Songs />} />
