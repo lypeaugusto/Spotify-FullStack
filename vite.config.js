@@ -1,22 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import { createHtmlPlugin } from 'vite-plugin-html';
 
 export default defineConfig({
-  plugins: [
-    react(),
-    createHtmlPlugin({
-      inject: {
-        data: {
-          title: 'Spotify',
-        },
-      },
-    }),
-  ],
+  root: 'front-end', // Define o diretório raiz como 'front-end'
+  base: './', // Mantém os caminhos relativos no HTML
+  plugins: [react()],
   build: {
-    outDir: '../dist',
-    target: 'esnext',
-    manifest: true, // Gera um manifest.json para mapear os arquivos
+    outDir: 'dist', // Saída da build será em 'front-end/dist'
+    emptyOutDir: true,
   },
-  base: './', // Define o caminho base relativo para os recursos
 });
