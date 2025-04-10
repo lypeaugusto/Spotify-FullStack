@@ -11,5 +11,6 @@ module.exports = {
     filename: 'assets/[name]-[contenthash].js', // Gera arquivos com hash
     path: __dirname + '/dist',
     clean: true, // Limpa a pasta dist antes do build
+    publicPath: '/', // Garante que os caminhos permaneçam absolutos
   },
 };

@@ -5,21 +5,10 @@ const URL = NODE_ENV === 'development'
   ? 'https://spotify-fullstack-gdhj.onrender.com/api' 
   : 'https://spotify-fullstack-gdhj.onrender.com/api'; // Replace with your production URL
 
-export let artistArray = [];
-export let songsArray = [];
+const responseArtist = await axios.get(`${URL}/artists`);
+const responseSongs = await axios.get(`${URL}/songs`);
 
-async function fetchData() {
-  try {
-    const responseArtist = await axios.get(`${URL}/artists`);
-    const responseSongs = await axios.get(`${URL}/songs`);
+export const artistArray = responseArtist.data;
+export const songsArray = responseSongs.data;
 
-    artistArray = responseArtist.data;
-    songsArray = responseSongs.data;
-
-    console.log(responseSongs.data);
-  } catch (error) {
-    console.error('Erro ao buscar dados da API:', error);
-  }
-}
-
-fetchData();
+console.log(responseSongs.data);
