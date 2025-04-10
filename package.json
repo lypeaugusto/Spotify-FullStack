@@ -8,7 +8,7 @@
   "devDependencies": {},
   "scripts": {
     "start": "npm start --prefix back-end",
-    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
+    "build": "vite build" 
   },
   "repository": {
     "type": "git",
