@@ -5,13 +5,10 @@
   "name": "aula1",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.4",
-    "vite": "^6.2.5"
-  },
+  "devDependencies": {},
   "scripts": {
     "start": "npm start --prefix back-end",
-    "build": "npx vite build"
+    "build": "npm install --prefix back-end && npm install --prefix front-end && npm run build --prefix front-end"
   },
   "repository": {
     "type": "git",
