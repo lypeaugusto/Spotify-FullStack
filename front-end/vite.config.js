@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
+    outDir: './dist', // Altere para criar a pasta dist fora de front-end
     target: 'esnext',
   }
 })

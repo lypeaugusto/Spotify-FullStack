@@ -1,5 +1,9 @@
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   build: {
-    outDir: 'dist', // Define o diretório de saída como 'dist'
+    outDir: '../dist', 
+    target: 'esnext',
   },
-};
+  base: './', // Define o caminho base relativo para os recursos
+});
